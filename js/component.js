@@ -4,8 +4,6 @@ function loadComponent(url, elementId, callback) {
   const basePath = isGitHubPages ? `/${repoName}/` : '/';
   const fullUrl = basePath + url.replace(/^\/+/, '');
 
-  console.log(basePath)
-  console.log(fullUrl)
   fetch(fullUrl)
     .then(response => {
       if (!response.ok) {
