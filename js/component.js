@@ -1,6 +1,10 @@
 function loadComponent(url, elementId, callback) {
-  const baseUrl = document.querySelector('base')?.getAttribute('href') || '';
-  const fullUrl = baseUrl + url;
+  const repoName = window.location.pathname.split('/')[1];
+  const isGitHubPages = window.location.hostname.includes('github.io');
+  const basePath = isGitHubPages ? `/${repoName}/` : '/';
+  const fullUrl = basePath + url.replace(/^\/+/, '');
+
+  console.log(basePath)
   console.log(fullUrl)
   fetch(fullUrl)
     .then(response => {
