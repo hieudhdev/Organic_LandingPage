@@ -37,8 +37,8 @@ function highlightActiveNavLink() {
 
 // Khi trang đã tải xong, tải các component
 document.addEventListener('DOMContentLoaded', function() {
-  loadComponent('../components/header.html', 'header-container', highlightActiveNavLink);
-  loadComponent('../components/footer.html', 'footer-container');
-  loadComponent('../components/copyright.html', 'copyright-container');
-  loadComponent('../components/blog.component.html', 'blog-component-container');
+  loadComponent('/components/header.html', 'header-container', highlightActiveNavLink);
+  loadComponent('/components/footer.html', 'footer-container');
+  loadComponent('/components/copyright.html', 'copyright-container');
+  loadComponent('/components/blog.component.html', 'blog-component-container');
 });
