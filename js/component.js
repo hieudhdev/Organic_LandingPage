@@ -1,21 +1,8 @@
-// function loadComponent(url, elementId) {
-//   fetch(url)
-//     .then(response => {
-//       if (!response.ok) {
-//         throw new Error(`Không thể tải: ${url}`);
-//       }
-//       return response.text();
-//     })
-//     .then(html => {
-//       document.getElementById(elementId).innerHTML = html;
-//     })
-//     .catch(error => {
-//       console.error('Lỗi khi tải component:', error);
-//     });
-// }
-
 function loadComponent(url, elementId, callback) {
-  fetch(url)
+  const baseUrl = document.querySelector('base')?.getAttribute('href') || '';
+  const fullUrl = baseUrl + url;
+  console.log(fullUrl)
+  fetch(fullUrl)
     .then(response => {
       if (!response.ok) {
         throw new Error(`Không thể tải: ${url}`);
