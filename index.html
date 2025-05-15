@@ -107,53 +107,7 @@
 
 
     <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6">
-                    <div class="row g-3">
-                        <div class="col-6 text-end">
-                            <img class="img-fluid bg-white w-100 mb-3 wow fadeIn" style="border-radius: 12px;" data-wow-delay="0.1s" src="img/about-7.jpg" alt="">
-                            <img class="img-fluid bg-white w-50 wow fadeIn" style="border-radius: 12px;" data-wow-delay="0.2s" src="img/about-9.jpg" alt="">
-                        </div>
-                        <div class="col-6">
-                            <img class="img-fluid bg-white w-50 mb-3 wow fadeIn" style="border-radius: 12px;" data-wow-delay="0.3s" src="img/about-10.jpg" alt="">
-                            <img class="img-fluid bg-white w-100 wow fadeIn" style="border-radius: 12px;" data-wow-delay="0.4s" src="img/about-8.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="section-title">
-                        <p class="fs-5 fw-medium fst-italic text-primary">Về chúng tôi</p>
-                        <h1 class="display-6">Hành trình về với thiên nhiên của Mộc</h1>
-                    </div>
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-4">
-                            <img class="img-fluid bg-white w-100" src="img/about-11.jpg" alt="">
-                        </div>
-                        <div class="col-sm-8">
-                            <a href="./specific-blog.html">
-                                <h5>Những bước chân đầu tiên trên đất núi Yên Thành</h5>
-                            </a>
-                            <p class="mb-0">Năm 2020, khi mọi người phải trải qua đại dịch COVID-19, chúng tôi nhận ra đó chính là thời điểm hoàn hảo để quay về với đất. 7 hecta đất ở vùng đồi núi tại huyện Yên Thành, tỉnh Nghệ An đã trở thành mảnh đất lành cho những hạt mầm ước mơ của Mộc bén rễ.</p>
-                        </div>
-                    </div>
-                    <div class="border-top mb-4"></div>
-                    <div class="row g-3">
-                        <div class="col-sm-8">
-                            <a href="./specific-blog.html">
-                                <h5>Từ đất lành đến sản phẩm sạch: Bưởi da xanh hướng hữu cơ</h5>
-                            </a>
-                            <p class="mb-0">Bạn đã bao giờ tự hỏi rau hướng hữu cơ thực sự được trồng như thế nào? Hay tại sao một quả bưởi hướng hữu cơ lại có hương vị đặc biệt hơn bưởi thông thường? Hôm nay, Mộc sẽ mở cánh cửa trang trại, đưa bạn tham quan quy trình canh tác nông nghiệp sạch mà chúng tôi đã và đang theo đuổi.</p>
-                        </div>
-                        <div class="col-sm-4">
-                            <img class="img-fluid bg-white w-100" src="img/about-11.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="about-component-container"></div>
     <!-- About End -->
 
 
@@ -165,41 +119,48 @@
                 <h1 class="display-6">Sản phẩm xanh có tác động tích cực đến cơ thể</h1>
             </div>
             <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-3.png" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Dầu gội</h4>
-                        <span class="text-body">Dầu gội chiết xuất từ vỏ bưởi da xanh, giúp tóc chắc khỏe tự nhiên</span>
+                <div class="d-block product-item rounded" data-wow-delay="0.1s">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="img/store-product-4.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">Bí đỏ</h4>
+                            <p>Tôi làm nông không phải để làm giàu nhanh, mà đồng hành cùng đất đai</p>
+                            <h4 class="text-primary">$19.00</h4>
+                        </div>
+                        <div class="store-overlay">
+                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">Xem chi tiết <i class="fa fa-arrow-right ms-2"></i></a>
+                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Thêm vào giỏ hàng <i class="fa fa-cart-plus ms-2"></i></a>
+                        </div>
                     </div>
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-4.png" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Dầu xả</h4>
-                        <span class="text-body">Dầu xả có chiết xuất từ vỏ cam, lưu giữ mùi hương cam thảo tự nhiên</span>
+                </div>
+                <div class="d-block product-item rounded" data-wow-delay="0.1s">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="img/store-product-4.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">Bí đỏ</h4>
+                            <p>Tôi làm nông không phải để làm giàu nhanh, mà đồng hành cùng đất đai</p>
+                            <h4 class="text-primary">$19.00</h4>
+                        </div>
+                        <div class="store-overlay">
+                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">Xem chi tiết <i class="fa fa-arrow-right ms-2"></i></a>
+                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Thêm vào giỏ hàng <i class="fa fa-cart-plus ms-2"></i></a>
+                        </div>
                     </div>
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-2.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Bưởi da xanh</h4>
-                        <span class="text-body">Sản phẩm bưởi da xanh, được chăm sóc đặc biệt</span>
+                </div>
+                <div class="d-block product-item rounded" data-wow-delay="0.1s">
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="img/store-product-4.jpg" alt="">
+                        <div class="p-4">
+                            <h4 class="mb-3">Bí đỏ</h4>
+                            <p>Tôi làm nông không phải để làm giàu nhanh, mà đồng hành cùng đất đai</p>
+                            <h4 class="text-primary">$19.00</h4>
+                        </div>
+                        <div class="store-overlay">
+                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">Xem chi tiết <i class="fa fa-arrow-right ms-2"></i></a>
+                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Thêm vào giỏ hàng <i class="fa fa-cart-plus ms-2"></i></a>
+                        </div>
                     </div>
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-6.JPG" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Mật ong</h4>
-                        <span class="text-body">Mật ong nguyên chất, được nuôi và thu hoạch thủ công</span>
-                    </div>
-                </a>
-                <a href="" class="d-block product-item rounded">
-                    <img src="img/product-1.jpg" alt="">
-                    <div class="bg-white shadow-sm text-center p-4 position-relative mt-n5 mx-4">
-                        <h4 class="text-primary">Gà đồi</h4>
-                        <span class="text-body">Gà đồi chăn thả phát triển tự nhiên</span>
-                    </div>
-                </a>
+                </div>
             </div>
         </div>
     </div>
@@ -314,7 +275,7 @@
 
 
     <!-- Store Start -->
-    <div class="container-xxl py-5">
+    <!-- <div class="container-xxl py-5">
         <div class="container">
             <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-medium fst-italic text-primary">Cửa hàng trực tuyến</p>
@@ -389,12 +350,12 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Store End -->
 
 
     <!-- Testimonial Start -->
-    <div class="container-fluid testimonial py-5 my-5">
+    <!-- <div class="container-fluid testimonial py-5 my-5">
         <div class="container py-5">
             <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
                 <p class="fs-5 fw-medium fst-italic text-white">Về khách hàng</p>
@@ -433,7 +394,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Testimonial End -->
 
 

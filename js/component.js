@@ -23,9 +23,14 @@ function loadComponent(url, elementId, callback) {
 }
 
 function highlightActiveNavLink() {
-  const path = window.location.pathname;
-  const page = path.substring(path.lastIndexOf('/') + 1) || 'index.html';
+  // const path = window.location.pathname;
+  // const page = path.substring(path.lastIndexOf('/') + 1) || 'index.html';
 
+  const path = window.location.pathname;
+  const page = path.endsWith('/') || path === ''
+    ? 'index.html'
+    : path.split('/').pop();
+  
   const links = document.querySelectorAll('.nav-item.nav-link');
   links.forEach(link => {
     const href = link.getAttribute('href');
@@ -43,4 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
   loadComponent('/components/footer.html', 'footer-container');
   loadComponent('/components/copyright.html', 'copyright-container');
   loadComponent('/components/blog.component.html', 'blog-component-container');
+  loadComponent('/components/about.component.html', 'about-component-container');
+  loadComponent('/components/product.component.html', 'product-component-container');
+
 });
