@@ -47,5 +47,4 @@ document.addEventListener('DOMContentLoaded', function() {
   loadComponent('/components/footer.html', 'footer-container');
   loadComponent('/components/copyright.html', 'copyright-container');
   loadComponent('/components/about.component.html', 'about-component-container');
-  loadComponent('/components/product.component.html', 'product-component-container');
 });

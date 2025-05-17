@@ -93,6 +93,59 @@
         dots: true,
         nav: false,
     });
+
+    window.changeImage = function(event, src) {
+        document.getElementById('mainImage').src = src;
+        document.querySelectorAll('.thumbnail').forEach(thumb => thumb.classList.remove('active'));
+        event.target.classList.add('active');
+    };
+
+    window.showProductModal = async function(product_id) {
+        let products = []
+        
+        await import('../data/product-data.js')
+        .then(data => {
+            products = data.product_data;
+        })
+        .catch(error => {
+            console.log('Import product_data fail')
+        });
+        
+        const product = products.find(product => product.id === product_id)
+
+        // Gán ảnh chính
+        document.getElementById('mainImage').src = "./img/" + product.main_image;
+
+        // // Cập nhật tiêu đề, giá, mô tả...
+        document.querySelector('.modal .product-image').src = "./img/" + product.main_image;
+        document.querySelector('.modal h2').textContent = product.title;
+        document.querySelector('.modal .text-muted').textContent = 'SKU: ' + product.sku;
+        document.querySelector('.modal .h4').textContent = '$' + product.price;
+        document.querySelector('.modal s').textContent = '$' + product.original_price;
+        document.querySelector('.modal p.mb-4').textContent = product.description;
+
+        // Cập nhật thumbnail nếu cần...
+        const thumbnailsContainer = document.querySelector('.modal .d-flex');
+        thumbnailsContainer.innerHTML = ''; // Xoá các thumbnail cũ
+
+        if (product.images && product.images.length > 0) {
+            product.images.forEach((thumb, index) => {
+                const img = document.createElement('img');
+                img.src = "./img/" + thumb;
+                img.alt = "Thumbnail " + (index + 1);
+                img.className = "thumbnail rounded me-2";
+                if (index === 0) img.classList.add("active");
+                img.onclick = function (event) {
+                    changeImage(event, img.src);
+                };
+                thumbnailsContainer.appendChild(img);
+            });
+        }
+
+        // Hiển thị modal
+        const modal = new bootstrap.Modal(document.getElementById('productModal'));
+        modal.show();
+    };
     
 })(jQuery);
 

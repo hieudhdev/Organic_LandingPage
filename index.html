@@ -118,54 +118,87 @@
                 <p class="fs-5 fw-medium fst-italic text-primary">Sản phẩm của chúng tôi</p>
                 <h1 class="display-6">Sản phẩm xanh có tác động tích cực đến cơ thể</h1>
             </div>
-            <div class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s">
-                <div class="d-block product-item rounded" data-wow-delay="0.1s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/store-product-4.jpg" alt="">
-                        <div class="p-4">
-                            <h4 class="mb-3">Bí đỏ</h4>
-                            <p>Tôi làm nông không phải để làm giàu nhanh, mà đồng hành cùng đất đai</p>
-                            <h4 class="text-primary">$19.00</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">Xem chi tiết <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Thêm vào giỏ hàng <i class="fa fa-cart-plus ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-block product-item rounded" data-wow-delay="0.1s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/store-product-4.jpg" alt="">
-                        <div class="p-4">
-                            <h4 class="mb-3">Bí đỏ</h4>
-                            <p>Tôi làm nông không phải để làm giàu nhanh, mà đồng hành cùng đất đai</p>
-                            <h4 class="text-primary">$19.00</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">Xem chi tiết <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Thêm vào giỏ hàng <i class="fa fa-cart-plus ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-block product-item rounded" data-wow-delay="0.1s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/store-product-4.jpg" alt="">
-                        <div class="p-4">
-                            <h4 class="mb-3">Bí đỏ</h4>
-                            <p>Tôi làm nông không phải để làm giàu nhanh, mà đồng hành cùng đất đai</p>
-                            <h4 class="text-primary">$19.00</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">Xem chi tiết <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Thêm vào giỏ hàng <i class="fa fa-cart-plus ms-2"></i></a>
+            <!-- Loop Item Products Start -->
+            <div id="product-list" class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s"></div> 
+            <!-- Loop Item Products End -->
+        </div>
+    </div>
+    <!-- Products End -->
+
+
+    <!-- Product Detail Start -->
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <!-- TOÀN BỘ NỘI DUNG PRODUCT DETAIL DÁN VÀO ĐÂY -->
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-4" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="container mt-5">
+                        <div class="row">
+                            <div class="col-md-6 mb-4">
+                                <img src="" alt="Product" class="img-fluid rounded mb-3 product-image" id="mainImage">
+                                <!-- <div class="d-flex justify-content-between"> -->
+                                <div class="d-flex justify-content-start flex-wrap gap-2">
+                                <!-- images of product / thumbnail -->
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <h2 class="mb-3">Premium Wireless Headphones</h2>
+                                <p class="text-muted mb-4">SKU: WH1000XM4</p>
+                                <div class="mb-3">
+                                    <span class="h4 me-2">$349.99</span>
+                                    <span class="text-muted"><s>$399.99</s></span>
+                                </div>
+                                <div class="mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                    <span class="ms-2">4.5 (120 reviews)</span>
+                                </div>
+                                <p class="mb-4">Experience premium sound quality and industry-leading noise cancellation with these wireless
+                                    headphones. Perfect for music lovers and frequent travelers.</p>
+                                <div class="mb-4">
+                                    <h5>Color:</h5>
+                                    <div class="btn-group" role="group" aria-label="Color selection">
+                                        <input type="radio" class="btn-check" name="color" id="black" autocomplete="off" checked>
+                                        <label class="btn btn-outline-dark" for="black">Black</label>
+                                        <input type="radio" class="btn-check" name="color" id="silver" autocomplete="off">
+                                        <label class="btn btn-outline-secondary" for="silver">Silver</label>
+                                        <input type="radio" class="btn-check" name="color" id="blue" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="blue">Blue</label>
+                                    </div>
+                                </div>
+                                <div class="mb-4">
+                                    <label for="quantity" class="form-label">Quantity:</label>
+                                    <input type="number" class="form-control" id="quantity" value="1" min="1" style="width: 80px;">
+                                </div>
+                                <button class="btn btn-primary btn-lg mb-3 me-2">
+                                    <i class="bi bi-cart-plus"></i> Add to Cart
+                                </button>
+                                <button class="btn btn-outline-secondary btn-lg mb-3">
+                                    <i class="bi bi-heart"></i> Add to Wishlist
+                                </button>
+                                <div class="mt-4">
+                                    <h5>Key Features:</h5>
+                                    <ul>
+                                        <li>Industry-leading noise cancellation</li>
+                                        <li>30-hour battery life</li>
+                                        <li>Touch sensor controls</li>
+                                        <li>Speak-to-chat technology</li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Products End -->
-
+    <!-- Product Detail End -->
 
     <!-- Article Start -->
     <div class="container-xxl py-5">
@@ -273,131 +306,6 @@
     </div>
     <!-- Video Modal End -->
 
-
-    <!-- Store Start -->
-    <!-- <div class="container-xxl py-5">
-        <div class="container">
-            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium fst-italic text-primary">Cửa hàng trực tuyến</p>
-                <h1 class="display-6">Lời Gửi Gắm - Chọn Hữu Cơ, Chọn Sự Sống</h1>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/store-product-4.jpg" alt="">
-                        <div class="p-4">
-                            <div class="text-center mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <h4 class="mb-3">Bí đỏ</h4>
-                            <p>Tôi làm nông không phải để làm giàu nhanh, mà đồng hành cùng đất đai</p>
-                            <h4 class="text-primary">$19.00</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">Xem chi tiết <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Thêm vào giỏ hàng <i class="fa fa-cart-plus ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/store-product-5.jpg" alt="">
-                        <div class="p-4">
-                            <div class="text-center mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <h4 class="mb-3">Cà chua</h4>
-                            <p>Tôi làm nông không phải để làm giàu nhanh, mà đồng hành cùng đất đai</p>
-                            <h4 class="text-primary">$19.00</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">Xem chi tiết <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Thêm vào giỏ hàng <i class="fa fa-cart-plus ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/store-product-6.jpg" alt="">
-                        <div class="p-4">
-                            <div class="text-center mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <h4 class="mb-3">Dâu tây</h4>
-                            <p>Tôi làm nông không phải để làm giàu nhanh, mà đồng hành cùng đất đai</p>
-                            <h4 class="text-primary">$19.00</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">Xem chi tiết <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Thêm vào giỏ hàng <i class="fa fa-cart-plus ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <a href="" class="btn btn-primary rounded-pill py-3 px-5">Xem thêm sản phẩm khác</a>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Store End -->
-
-
-    <!-- Testimonial Start -->
-    <!-- <div class="container-fluid testimonial py-5 my-5">
-        <div class="container py-5">
-            <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium fst-italic text-white">Về khách hàng</p>
-                <h1 class="display-6">Khách hàng nói gì về chúng tôi?</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.5s">
-                <div class="testimonial-item p-4 p-lg-5">
-                    <p class="mb-4">Khi bạn lựa chọn nông sản hữu cơ từ Mộc Farm, bạn không đơn thuần đang đầu tư cho sức khỏe gia đình mình, mà còn đang đồng hành cùng chúng tôi trong hành trình kiến tạo một nền nông nghiệp bền vững, thân thiện với môi trường và con người</p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-5.jpg" alt="">
-                        <div class="text-start ms-3">
-                            <h5>Hiếu Đặng</h5>
-                            <span class="text-primary">Người dùng sản phẩm</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item p-4 p-lg-5">
-                    <p class="mb-4">Khi bạn lựa chọn nông sản hữu cơ từ Mộc Farm, bạn không đơn thuần đang đầu tư cho sức khỏe gia đình mình, mà còn đang đồng hành cùng chúng tôi trong hành trình kiến tạo một nền nông nghiệp bền vững, thân thiện với môi trường và con người</p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-5.jpg" alt="">
-                        <div class="text-start ms-3">
-                            <h5>Hiếu Đặng</h5>
-                            <span class="text-primary">Người dùng sản phẩm</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-item p-4 p-lg-5">
-                    <p class="mb-4">Khi bạn lựa chọn nông sản hữu cơ từ Mộc Farm, bạn không đơn thuần đang đầu tư cho sức khỏe gia đình mình, mà còn đang đồng hành cùng chúng tôi trong hành trình kiến tạo một nền nông nghiệp bền vững, thân thiện với môi trường và con người</p>
-                    <div class="d-flex align-items-center justify-content-center">
-                        <img class="img-fluid flex-shrink-0" src="img/testimonial-5.jpg" alt="">
-                        <div class="text-start ms-3">
-                            <h5>Hiếu Đặng</h5>
-                            <span class="text-primary">Người dùng sản phẩm</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- Testimonial End -->
-
-
     <!-- Contact Start -->
     <div class="container-xxl contact py-5">
         <div class="container">
@@ -457,10 +365,87 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
+    
     <!-- Template Javascript -->
+    <!-- <script src="data/product-data.js"></script> -->
     <script src="js/main.js"></script>
     <script src="js/component.js"></script>
+
+    <script type="module">
+        import { product_data } from './data/product-data.js';
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tìm container carousel
+            const carouselContainer = document.querySelector('.product-carousel');
+            
+            // Kiểm tra xem dữ liệu sản phẩm có tồn tại không
+            if (typeof product_data === 'undefined' || !product_data || product_data.length === 0) {
+                carouselContainer.innerHTML = '<p class="text-center text-danger">Không có sản phẩm nào để hiển thị.</p>';
+                return;
+            }
+            
+            // Xóa nội dung hiện tại của carousel (nếu có)
+            carouselContainer.innerHTML = '';
+            
+            // Tạo các phần tử sản phẩm và thêm trực tiếp vào carousel
+            product_data.forEach(function(product) {
+                // Tạo phần tử div mới cho sản phẩm
+                const productDiv = document.createElement('div');
+                productDiv.className = 'd-block product-item rounded';
+                productDiv.setAttribute('data-wow-delay', '0.1s');
+                
+                // Thiết lập HTML cho phần tử sản phẩm
+                productDiv.innerHTML = `
+                <div class="store-item position-relative text-center">
+                    <img class="img-fluid" src="img/${product.main_image}" alt="${product.title}">
+                    <div class="p-4">
+                    <h4 class="mb-3">${product.title}</h4>
+                    <p>${product.description}</p>
+                    <h4 class="text-primary">$${product.price.toFixed(2)}</h4>
+                    </div>
+                    <div class="store-overlay">
+                    <a href="javascript:void(0)" onclick="showProductModal(${product.id})" class="btn btn-primary rounded-pill py-2 px-4 m-2">
+                        Xem chi tiết <i class="fa fa-arrow-right ms-2"></i>
+                    </a>
+                    <a href="javascript:void(0)" class="btn btn-dark rounded-pill py-2 px-4 m-2">
+                        Thêm vào giỏ hàng <i class="fa fa-cart-plus ms-2"></i>
+                    </a>
+                    </div>
+                </div>
+                `;
+                
+                // Thêm phần tử sản phẩm vào carousel
+                carouselContainer.appendChild(productDiv);
+            });
+            
+            // Hủy carousel hiện tại nếu đã được khởi tạo
+            if ($(carouselContainer).data('owl.carousel')) {
+                $(carouselContainer).trigger('destroy.owl.carousel');
+            }
+            
+            // Khởi tạo lại Owl Carousel
+            $(carouselContainer).owlCarousel({
+                autoplay: true,
+                smartSpeed: 1000,
+                margin: 25,
+                loop: true,
+                center: true,
+                dots: false,
+                nav: true,
+                navText : [
+                    '<i class="bi bi-chevron-left"></i>',
+                    '<i class="bi bi-chevron-right"></i>'
+                ],
+                responsive: {
+                    0:{ items:1 },
+                    576:{ items:1 },
+                    768:{ items:2 },
+                    992:{ items:3 }
+                }
+            });
+        });
+    </script>
+        
 </body>
 
 </html>
