@@ -45,26 +45,20 @@
     </div>
     <!-- Navbar End -->
 
-
-    <!-- Page Header Start -->
-    <!-- <div class="container-fluid page-header py-3 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container text-center py-5">
-            <h1 class="display-2 text-dark mb-4 animated slideInDown">Blog</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
-                <ol class="breadcrumb justify-content-center mb-0">
-                    <li class="breadcrumb-item"><a href="#">Trang Chủ</a></li>
-                    <li class="breadcrumb-item"><a href="#">Bài Báo</a></li>
-                    <li class="breadcrumb-item text-dark" aria-current="page">Đọc Bài</li>
-                </ol>
-            </nav>
-        </div>
-    </div> -->
-    <!-- Page Header End -->
-
-
     <!-- Article Start -->
-    <div id="blog-detail"></div>   
+    <iframe
+        id="blog_detail"
+        width="55%"
+        style="border:1px solid #ccc; margin: 20px auto; display: block;"
+        scrolling="no"
+        frameborder="0"
+        onload="resizeIframe(this)"
+    ></iframe>
+    <div style="text-align: center;">
+        <a href="blog.html" class="btn btn-outline-primary mt-4">← Quay lại danh sách</a>
+    </div>
     <!-- Article End -->
+
 
 
     <!-- Footer Start -->
@@ -94,43 +88,45 @@
     <script src="js/component.js"></script>
 
     <script type="module">
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        function adjustIframeHeight() {
+            var iframe = document.getElementById('blog_detail');
+            
+            // Kiểm tra nếu iframe đã load xong
+            if (iframe.contentDocument) {
+                try {
+                    // Cố gắng lấy chiều cao của nội dung
+                    var height = iframe.contentDocument.body.scrollHeight;
+                    iframe.style.height = (height + 100) + 'px'; // Thêm một chút khoảng trống
+                } catch (e) {
+                    console.log("Không thể truy cập nội dung iframe:", e);
+                    // Fallback nếu không truy cập được
+                    iframe.style.height = '800px';
+                }
+            } else {
+                // Fallback nếu không có contentDocument
+                iframe.style.height = '800px';
+            }
+        }
+        
+        // Khi trang đã load
         import { blog_data } from './data/blog-data.js';
 
-        const params = new URLSearchParams(window.location.search);
-        const id = params.get('id');
-        const blog = blog_data[id];
-        const container = document.getElementById('blog-detail');
+        document.addEventListener("DOMContentLoaded", function () {
+            const blogId = getQueryParam('id') || '1'
+            const blog = blog_data[blogId];
 
-        if (!blog) {
-            container.innerHTML = '<p class="text-center text-danger">Không tìm thấy bài viết.</p>';
-        } else {
-            // Render các section
-            const sectionsHTML = blog.sections.map(section => {
-                if (section.type === 'text') {
-                    return `<p class="mb-4">${section.content}</p>`;
-                } else if (section.type === 'image') {
-                    return `<img src="../img/${section.src}" class="img-fluid rounded my-4" alt="Ảnh nội dung">`;
-                }
-                return '';
-            }).join('');
-
-            container.innerHTML = `
-                <div class="d-flex flex-column align-items-center py-2">
-                    <!-- Banner -->
-                    <div class="w-100 d-flex justify-content-center mb-4">
-                        <img src="../img/${blog.banner}" alt="Banner" class="img-fluid rounded"
-                            style="width: 65%; max-height: 400px; object-fit: cover;">
-                    </div>
-
-                    <!-- Nội dung chính -->
-                    <div class="text-center" style="width: 50%;">
-                        <h1 class="mb-4">${blog.title}</h1>
-                        ${sectionsHTML}
-                        <a href="blog.html" class="btn btn-outline-primary mt-4">← Quay lại danh sách</a>
-                    </div>
-                </div>
-            `;
-        }
+            const iframe = document.getElementById('blog_detail');
+            iframe.src = './data/' + blog.src_html;
+            iframe.onload = adjustIframeHeight;
+        });
+        
+        // Điều chỉnh khi cửa sổ thay đổi kích thước
+        window.addEventListener('resize', adjustIframeHeight);
     </script>
 
 </body>
