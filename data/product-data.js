@@ -1,13 +1,13 @@
 export const product_data = [
     {
         "id": 1,
-        "title": "Bí đỏ",
+        "title": "Bưởi Da Xanh",
         "price": 349.99,                           
         "original_price": 399.99,                  
-        "description": "Bí đỏ được trồng tự nhiên", 
+        "description": "Bưởi da xanh hướng hữu cơ", 
         "rating": 4.5,                             
         "review_count": 120,                        
-        "main_image": "store-product-4.jpg",     
+        "main_image": "product-2.jpg",     
         "images": [                               
             "store-product-4.jpg",
             "store-product-5.jpg",
@@ -23,13 +23,13 @@ export const product_data = [
     },
     {
         "id": 2,
-        "title": "Cà Chua",
+        "title": "Dầu Gội",
         "price": 349.99,                           
         "original_price": 399.99,                  
-        "description": "Bí đỏ được trồng tự nhiên", 
+        "description": "Dầu gội tinh chất vỏ bưởi", 
         "rating": 4.5,                             
         "review_count": 120,                        
-        "main_image": "store-product-5.jpg",     
+        "main_image": "product-3.png",     
         "images": [                               
             "store-product-4.jpg",
             "store-product-5.jpg",
@@ -45,13 +45,13 @@ export const product_data = [
     },
     {
         "id": 3,
-        "title": "Dâu Tây",
+        "title": "Xịt Tóc",
         "price": 349.99,                           
         "original_price": 399.99,                  
-        "description": "Bí đỏ được trồng tự nhiên", 
+        "description": "Nước xịt dưỡng tóc tinh dầu bưởi", 
         "rating": 4.5,                             
         "review_count": 120,                        
-        "main_image": "store-product-6.jpg",     
+        "main_image": "product-4.png",     
         "images": [                               
             "store-product-4.jpg",
             "store-product-5.jpg",

@@ -49,14 +49,14 @@
     <!-- Page Header Start -->
     <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center py-5">
-            <h1 class="display-2 text-dark mb-4 animated slideInDown">Tea Store</h1>
-            <nav aria-label="breadcrumb animated slideInDown">
+            <h1 class="display-2 text-dark mb-4 animated slideInDown">Sản Phẩm Của Mộc</h1>
+            <!-- <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Pages</a></li>
                     <li class="breadcrumb-item text-dark" aria-current="page">Store</li>
                 </ol>
-            </nav>
+            </nav> -->
         </div>
     </div>
     <!-- Page Header End -->
@@ -66,80 +66,25 @@
     <div class="container-xxl py-5">
         <div class="container">
             <div class="section-title text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
-                <p class="fs-5 fw-medium fst-italic text-primary">Online Store</p>
-                <h1 class="display-6">Want to stay healthy? Choose tea taste</h1>
+                <!-- <p class="fs-5 fw-medium fst-italic text-primary">Online Store</p> -->
+                <h1 class="display-6">Muốn sống khỏe? Hãy chọn Mộc</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/store-product-4.jpg" alt="">
-                        <div class="p-4">
-                            <div class="text-center mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <h4 class="mb-3">Nature close tea</h4>
-                            <p>Aliqu diam amet diam et eos. Clita erat ipsum lorem erat ipsum lorem sit sed</p>
-                            <h4 class="text-primary">$19.00</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Add to Cart <i class="fa fa-cart-plus ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/store-product-5.jpg" alt="">
-                        <div class="p-4">
-                            <div class="text-center mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <h4 class="mb-3">Green tea tulsi</h4>
-                            <p>Aliqu diam amet diam et eos. Clita erat ipsum lorem erat ipsum lorem sit sed</p>
-                            <h4 class="text-primary">$19.00</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Add to Cart <i class="fa fa-cart-plus ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="store-item position-relative text-center">
-                        <img class="img-fluid" src="img/store-product-6.jpg" alt="">
-                        <div class="p-4">
-                            <div class="text-center mb-3">
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                                <small class="fa fa-star text-primary"></small>
-                            </div>
-                            <h4 class="mb-3">Instant tea premix</h4>
-                            <p>Aliqu diam amet diam et eos. Clita erat ipsum lorem erat ipsum lorem sit sed</p>
-                            <h4 class="text-primary">$19.00</h4>
-                        </div>
-                        <div class="store-overlay">
-                            <a href="" class="btn btn-primary rounded-pill py-2 px-4 m-2">More Detail <i class="fa fa-arrow-right ms-2"></i></a>
-                            <a href="" class="btn btn-dark rounded-pill py-2 px-4 m-2">Add to Cart <i class="fa fa-cart-plus ms-2"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                <!-- Loop Item Products Start -->
+                <div id="product-list" class="owl-carousel product-carousel wow fadeInUp" data-wow-delay="0.5s"></div> 
+                <!-- Loop Item Products End -->
+                <!-- <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
                     <a href="" class="btn btn-primary rounded-pill py-3 px-5">View More Products</a>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
     <!-- Store End -->
+
+    <!-- Product Detail Start -->
+    <!-- Modal -->
+    <div id="product-modal-container"></div>
+    <!-- Product Detail End -->
 
 
     <!-- Footer Start -->
@@ -166,6 +111,81 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/component.js"></script>
+
+    <script type="module">
+        import { product_data } from './data/product-data.js';
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tìm container carousel
+            const carouselContainer = document.querySelector('.product-carousel');
+            
+            // Kiểm tra xem dữ liệu sản phẩm có tồn tại không
+            if (typeof product_data === 'undefined' || !product_data || product_data.length === 0) {
+                carouselContainer.innerHTML = '<p class="text-center text-danger">Không có sản phẩm nào để hiển thị.</p>';
+                return;
+            }
+            
+            // Xóa nội dung hiện tại của carousel (nếu có)
+            carouselContainer.innerHTML = '';
+            
+            // Tạo các phần tử sản phẩm và thêm trực tiếp vào carousel
+            product_data.forEach(function(product) {
+                // Tạo phần tử div mới cho sản phẩm
+                const productDiv = document.createElement('div');
+                productDiv.className = 'd-block product-item rounded';
+                productDiv.setAttribute('data-wow-delay', '0.1s');
+                
+                // Thiết lập HTML cho phần tử sản phẩm
+                productDiv.innerHTML = `
+                    <div class="store-item position-relative text-center">
+                        <img class="img-fluid" src="img/${product.main_image}" alt="${product.title}">
+                        <div class="p-4">
+                        <h4 class="mb-3">${product.title}</h4>
+                        <p>${product.description}</p>
+                        <h4 class="text-primary">$${product.price.toFixed(2)}</h4>
+                        </div>
+                        <div class="store-overlay">
+                        <a href="javascript:void(0)" onclick="showProductModal(${product.id})" class="btn btn-primary rounded-pill py-2 px-4 m-2">
+                            Xem chi tiết <i class="fa fa-arrow-right ms-2"></i>
+                        </a>
+                        <a href="./blog-detail.html?id=${product.id}" class="btn btn-dark rounded-pill py-2 px-4 m-2">
+                            Đọc bài viết sản phẩm <i class="bi bi-bookmark-check-fill ms-2"></i>
+                        </a>
+                        </div>
+                    </div>
+                `;
+                
+                // Thêm phần tử sản phẩm vào carousel
+                carouselContainer.appendChild(productDiv);
+            });
+            
+            // Hủy carousel hiện tại nếu đã được khởi tạo
+            if ($(carouselContainer).data('owl.carousel')) {
+                $(carouselContainer).trigger('destroy.owl.carousel');
+            }
+            
+            // Khởi tạo lại Owl Carousel
+            $(carouselContainer).owlCarousel({
+                autoplay: true,
+                smartSpeed: 1000,
+                margin: 25,
+                loop: true,
+                center: true,
+                dots: false,
+                nav: true,
+                navText : [
+                    '<i class="bi bi-chevron-left"></i>',
+                    '<i class="bi bi-chevron-right"></i>'
+                ],
+                responsive: {
+                    0:{ items:1 },
+                    576:{ items:1 },
+                    768:{ items:2 },
+                    992:{ items:3 }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
