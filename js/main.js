@@ -146,6 +146,18 @@
         const modal = new bootstrap.Modal(document.getElementById('productModal'));
         modal.show();
     };
+
+    $(document).ready(function () {
+        const $zaloBtn = $('#zalo-contact');
+
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() > 1000) {
+                $zaloBtn.addClass('show');
+            } else {
+                $zaloBtn.removeClass('show');
+            }
+        });
+    });
     
 })(jQuery);
 

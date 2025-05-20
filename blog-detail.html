@@ -55,7 +55,7 @@
         onload="resizeIframe(this)"
     ></iframe>
     <div style="text-align: center;">
-        <a href="blog.html" class="btn btn-outline-primary mt-4">← Quay lại danh sách</a>
+        <a href="javascript:history.back()" class="btn btn-outline-primary mt-4">← Quay lại danh sách</a>
     </div>
     <!-- Article End -->
 
@@ -126,7 +126,18 @@
         });
         
         // Điều chỉnh khi cửa sổ thay đổi kích thước
-        window.addEventListener('resize', adjustIframeHeight);
+        // window.addEventListener('resize', adjustIframeHeight);
+
+        // Theo dõi khi iframe hoàn tất load lại nội dung (và điều chỉnh)
+        iframe.onload = () => {
+            adjustIframeHeight();
+
+            try {
+                iframe.contentWindow.addEventListener('resize', adjustIframeHeight);
+            } catch (e) {
+                console.warn("Không thể thêm listener resize trong iframe:", e);
+            }
+        };
     </script>
 
 </body>

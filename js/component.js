@@ -48,4 +48,5 @@ document.addEventListener('DOMContentLoaded', function() {
   loadComponent('/components/copyright.html', 'copyright-container');
   loadComponent('/components/about.component.html', 'about-component-container');
   loadComponent('/components/product-modal.html', 'product-modal-container');
+  loadComponent('/components/zalo-button.html', 'zalo-button-container');
 });
