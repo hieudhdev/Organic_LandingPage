@@ -29,7 +29,7 @@ export const product_data = [
         "description": "Bưởi da xanh hướng hữu cơ", 
         "rating": 4.5,                             
         "review_count": 120,                        
-        "main_image": "product-7.png",     
+        "main_image": "product-7.JPG",     
         "images": [                               
             "store-product-4.jpg",
             "store-product-5.jpg",
@@ -51,7 +51,7 @@ export const product_data = [
         "description": "Bưởi da xanh hướng hữu cơ", 
         "rating": 4.5,                             
         "review_count": 120,                        
-        "main_image": "farm-5.png",     
+        "main_image": "farm-5.JPG",     
         "images": [                               
             "store-product-4.jpg",
             "store-product-5.jpg",
